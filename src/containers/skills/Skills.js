@@ -18,12 +18,13 @@ export default function Skills() {
         <Fade left duration={1000}>
           <div className="skills-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
               <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
+              alt="Man Working"
+              style={{ marginTop: '80px' }}
+              src={require("../../assets/images/developing1.jpg")}
+            ></img>
+            ) : (
+              <DisplayLottie animationData={codingPerson} />
             )}
           </div>
         </Fade>
@@ -31,7 +32,7 @@ export default function Skills() {
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-            >
+            > 
               {skillsSection.title}{" "}
             </h1>
             <p
